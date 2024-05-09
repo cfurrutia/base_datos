@@ -70,6 +70,8 @@ SELECT COUNT(*) AS total_registros FROM INSCRITOS;
 
 -- 2. ¿Cuántos inscritos hay en total?
 
+SELECT fuente, SUM(cantidad) AS total_inscritos FROM INSCRITOS GROUP BY fuente;
+
 /* fuente | total_inscritos
 --------+-----------------
  Página |             441
